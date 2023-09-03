@@ -98,7 +98,7 @@ class ScreenTransition extends h2d.Scene {
 	public function onResize() {
 		if (app.s2d == null) return;
 
-		background.width = app.s2d.width;
-		background.height = app.s2d.height;
+		background.width = hxd.Window.getInstance().width;
+		background.height = hxd.Window.getInstance().height;
 	}
 }
